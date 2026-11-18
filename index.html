@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff5f2" />
+  <title>Gửi anh – 19/11 ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <main class="page">
+    <header class="intro">
+      <p class="eyebrow">19 · 11 &nbsp; / &nbsp; NGÀY CỦA ANH</p>
+      <h1>Gửi anh,<br><em>người em thương.</em></h1>
+      <p class="lead">Có vài điều em muốn nói với anh,<br>nhẹ nhàng như những cánh hoa này.</p>
+      <button class="start-btn" id="startBtn">Mở món quà <span>♡</span></button>
+    </header>
+
+    <section class="garden" aria-label="Cành hồng và những cánh hoa">
+      <div class="hint" id="hint">Chạm vào từng cánh hoa nhé</div>
+      <svg class="rose" viewBox="0 0 420 510" role="img" aria-label="Một cành hoa hồng với mười cánh hoa rơi và một cánh hoa cuối">
+        <defs>
+          <linearGradient id="stem" x1="0" x2="1"><stop stop-color="#567d60"/><stop offset="1" stop-color="#9ab18a"/></linearGradient>
+          <linearGradient id="petal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f7a9ae"/><stop offset="1" stop-color="#c94f69"/></linearGradient>
+          <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a9c49a"/><stop offset="1" stop-color="#557b60"/></linearGradient>
+        </defs>
+        <path d="M210 462 C195 380 235 300 210 205 C202 168 207 135 210 110" fill="none" stroke="url(#stem)" stroke-width="7" stroke-linecap="round"/>
+        <path d="M211 335 C160 285 120 294 105 323 C145 354 180 357 211 335Z" fill="url(#leaf)"/>
+        <path d="M216 270 C267 220 310 230 321 258 C288 291 249 295 216 270Z" fill="url(#leaf)"/>
+        <path d="M210 205 C165 177 146 185 132 207 C162 231 190 229 210 205Z" fill="url(#leaf)"/>
+        <path d="M210 205 Q166 205 132 207 M216 270 Q273 264 321 258 M211 335 Q157 329 105 323" fill="none" stroke="#d6e0c8" stroke-width="2" opacity=".7"/>
+        <path d="M210 118 C173 92 157 62 180 43 C198 27 215 43 218 61 C230 32 263 35 270 59 C280 89 247 111 210 118Z" fill="url(#petal)" stroke="#bd5269" stroke-width="2"/>
+        <path d="M210 115 C190 87 198 65 215 62 C231 60 243 79 232 99 C226 110 218 115 210 115Z" fill="#f8c0c0" opacity=".9"/>
+        <path d="M210 118 Q205 140 210 160" fill="none" stroke="#567d60" stroke-width="4"/>
+        <circle cx="210" cy="116" r="4" fill="#f9d8d1"/>
+      </svg>
+      <div class="petal-field" id="petalField"></div>
+      <button class="last-petal" id="lastPetal" aria-label="Chạm vào cánh hoa cuối cùng">
+        <span>11</span>
+      </button>
+    </section>
+
+    <p class="footer-note">Dù cách nhau một khoảng trời, em vẫn luôn hướng về anh. ♡</p>
+  </main>
+
+  <div class="modal" id="messageModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="close" id="closeModal" aria-label="Đóng">×</button>
+      <p class="modal-kicker" id="modalKicker">MỘT ĐIỀU EM MUỐN NÓI</p>
+      <div class="mini-flower">✿</div>
+      <p class="message" id="messageText"></p>
+      <p class="modal-sign">Thương anh, từ nơi xa. ♡</p>
+      <button class="next-btn" id="nextBtn">Đọc tiếp một cánh hoa</button>
+    </div>
+  </div>
+
+  <div class="ending" id="ending" aria-hidden="true">
+    <div class="ending-inner">
+      <div class="beating-heart">♥</div>
+      <p class="ending-kicker">ĐIỀU CUỐI CÙNG EM MUỐN NÓI</p>
+      <h2>Mong anh sẽ luôn<br><em>bình an và thật hạnh phúc</em></h2>
+      <p class="ending-copy">Dù chúng mình đang ở xa nhau, em mong anh vẫn cảm nhận được tình cảm của em qua những điều nhỏ bé này. Hãy giữ gìn sức khỏe, ăn uống đầy đủ và nhớ rằng luôn có một người ở đây thương anh rất nhiều.</p>
+      <p class="ending-sign">Em chờ ngày được gặp anh và ôm anh thật lâu. ♡</p>
+      <button class="again-btn" id="againBtn">Đọc lại món quà</button>
+    </div>
+    <div class="heart-sparkle">✧</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
